@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "274729365211",
+    "project_id": "e-commerce-5f725",
+    "storage_bucket": "e-commerce-5f725.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274729365211:android:f620cd6ade40ef859ae6fe",
+        "android_client_info": {
+          "package_name": "com.ruhlanusubov.laza"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA659VqmQYJ46MAjSXx7qsuRW2pqj1Jmz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

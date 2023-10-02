@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Lafyuu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="offer">Offer</string>
+    <string name="account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">hello</string>
+    <string name="welcome">Welcome to Lafyuu</string>
+    <string name="signin">Sign in to continue</string>
+    <string name="email">Username</string>
+    <string name="user">Your Email</string>
+    <string name="password">Password</string>
+    <string name="registertext">Sign In</string>
+    <string name="or">OR</string>
+    <string name="google">Login with Google</string>
+    <string name="facebook">Login with Facebook</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="dont">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="error">Please fill the blank</string>
+
+    <string name="full">Full Name</string>
+    <string name="passagain">Password Again</string>
+    <string name="logintext">Sign Up</string>
+    <string name="have">Have an account?</string>
+    <string name="login">Sign In</string>
+    <string name="create">Create a new account</string>
+    <string name="start">Let\'s Get Started</string>
+    <string name="_299_43">299.43$</string>
+</resources>

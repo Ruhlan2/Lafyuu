@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Laza" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:navigationBarColor">@color/blue</item>
+        <item name="colorPrimary">#E6001B</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#979797</item>
+        <item name="colorControlActivated">#FEC733</item>
+    </style>
+
+
+
+
+    <style name="Theme.Laza" parent="Base.Theme.Laza" />
+</resources>
