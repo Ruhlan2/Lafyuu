@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.genderFragment,
                 R.id.nameFragment,
                 R.id.emailFragment,
+                R.id.googleSignFragment,
                 R.id.phoneFragment->{
                         binding.bottomNavigationView.visibility= View.GONE
                     }else->{

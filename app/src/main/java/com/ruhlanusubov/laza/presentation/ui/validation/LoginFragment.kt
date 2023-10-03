@@ -46,6 +46,9 @@ class LoginFragment : Fragment() {
                 validation()
                 //login()
             }
+            googleBtn.setOnClickListener {
+                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToGoogleSignFragment())
+            }
         }
 
     }
