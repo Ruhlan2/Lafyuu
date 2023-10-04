@@ -8,13 +8,13 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="5dp"
         app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,59 +37,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/image47" />
+                    android:src="@drawable/log" />
 
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView21"
-                android:layout_width="160dp"
+                android:id="@+id/productName"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:ellipsize="end"
                 android:fontFamily="@font/inter_bold"
                 android:maxLines="2"
-                android:ellipsize="end"
-                android:text="Nike Air Zoom Pegasus 36 Miami"
+                android:text="Nike Air Zoom Pegasus 36 Miamidffdfdfdffdf"
                 android:textColor="@color/blue_d"
                 android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cardView8"
                 app:layout_constraintTop_toTopOf="@+id/cardView8" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView21"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView21"
-                app:layout_constraintTop_toTopOf="@+id/textView21">
-
-
-                <CheckBox
-                    android:id="@+id/wishBox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/wish"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/materialButton3"
-                    style="@style/Widget.Material3.Button.IconButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/account"
-                    app:icon="@drawable/delete_svgrepo_com"
-                    app:iconTint="#49454F"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/wishBox" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/productPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -99,16 +68,18 @@
                 android:textColor="@color/blue"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView21"
-                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                app:layout_constraintStart_toStartOf="@+id/productName"
+                app:layout_constraintTop_toBottomOf="@+id/productName" />
 
 
             <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/materialButtonToggleGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_margin="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productName">
 
                 <com.google.android.material.button.MaterialButton
                     style="@style/Widget.Material3.Button.IconButton"
@@ -118,11 +89,12 @@
                     app:icon="@drawable/minus_svgrepo_com" />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/quantity"
                     style="@style/Widget.Material3.Button.IconButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#D4D5D8"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <com.google.android.material.button.MaterialButton
                     style="@style/Widget.Material3.Button.IconButton"
@@ -131,7 +103,6 @@
                     android:backgroundTint="@color/blue"
                     app:icon="@drawable/plus_large_svgrepo_com" />
             </com.google.android.material.button.MaterialButtonToggleGroup>
-          
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

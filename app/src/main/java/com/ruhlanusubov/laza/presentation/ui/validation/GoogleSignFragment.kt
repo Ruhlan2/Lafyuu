@@ -46,6 +46,7 @@ class GoogleSignFragment : Fragment() {
 
             if(email.isEmpty()||password.isEmpty()){
                 FancyToast.makeText(requireContext(),"Fill the blanks",FancyToast.LENGTH_SHORT,FancyToast.WARNING,false).show()
+                return
             }else{
                 auth.signInWithEmailAndPassword(email,password).addOnSuccessListener {
                     with(binding){

@@ -1,5 +1,8 @@
 package com.ruhlanusubov.laza.service
 
+import com.ruhlanusubov.laza.model.cart.Cart
+import com.ruhlanusubov.laza.model.cart.CartProduct
+import com.ruhlanusubov.laza.model.cart.CartResponse
 import com.ruhlanusubov.laza.model.category.CategoryList
 import com.ruhlanusubov.laza.model.product.DetailResponse
 import com.ruhlanusubov.laza.model.product.Product
@@ -40,5 +43,9 @@ interface Service {
         @Path("id") id:Int
     ):Call<UserDetailsResponse>
 
+    @GET("users/{id}/carts")
+    fun cartDetail(
+        @Path("id") id:Int
+    ):Call<CartResponse>
 
 }

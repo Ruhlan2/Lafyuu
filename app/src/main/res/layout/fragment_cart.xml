@@ -39,19 +39,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialDivider4">
 
-      <androidx.constraintlayout.widget.ConstraintLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
+
 
           <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/cartRv"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               app:layout_constraintBottom_toBottomOf="parent"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
               app:layout_constraintTop_toTopOf="parent" />
-
-      </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
@@ -279,7 +276,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textAllCaps="true" />
+                    android:textAllCaps="true"/>
+
 
             </com.google.android.material.textfield.TextInputLayout>
 

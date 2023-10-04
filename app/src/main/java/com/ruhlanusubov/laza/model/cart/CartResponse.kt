@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class CartResponse(
     @SerializedName("carts")
-    val carts: List<Cart?>?,
+    val carts: List<Cart>?,
     @SerializedName("limit")
     val limit: Int?,
     @SerializedName("skip")
