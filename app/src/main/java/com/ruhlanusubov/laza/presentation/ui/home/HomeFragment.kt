@@ -52,6 +52,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        more()
         timer()
         userData()
         flashData()
@@ -64,10 +65,23 @@ class HomeFragment : Fragment() {
         }
     }
 
+    private fun more(){
+        with(binding){
+            moreCategory.setOnClickListener {
+                categoryResponse()
+            }
+            seeMore.setOnClickListener {
+                seeMore()
+            }
+        }
+    }
+    private fun categoryResponse(){
+
+    }
+    private fun seeMore(){
+        findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSeeMoreFragment())
+    }
     private fun timer() {
-
-
-
         val totalMillis :Long= 3600000 // 1 hour in milliseconds
 
         timer = object : CountDownTimer(totalMillis, 1000) {

@@ -17,6 +17,8 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface Service {
+    @GET("productWithoutLimit")
+    fun getMore():Call<DetailResponse>
     @GET("products")
     fun getProduct(
         @Query("limit") limit:Int)

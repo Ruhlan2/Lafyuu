@@ -40,15 +40,23 @@ class CartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         setup()
-        adapter()
+        binding.checkBtn.setOnClickListener {
+            check()
+        }
+    }
+    private fun check(){
+        with(binding){
+            detail.visibility=View.VISIBLE
+            cupon.visibility=View.VISIBLE
+        }
     }
     private fun adapter(){
         binding.cartRv.layoutManager=LinearLayoutManager(requireContext())
         binding.cartRv.adapter=adapter
     }
     private fun setup(){
+        adapter()
         sp=requireContext().getSharedPreferences("UserId",Context.MODE_PRIVATE)
         val cartId=sp.getInt("id",1)
         service.cartDetail(cartId).enqueue(
@@ -73,8 +81,6 @@ class CartFragment : Fragment() {
             }
         )
     }
-
-
     override fun onDestroy() {
         super.onDestroy()
         _binding=null
