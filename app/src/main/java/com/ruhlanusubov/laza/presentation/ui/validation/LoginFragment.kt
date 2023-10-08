@@ -49,6 +49,9 @@ class LoginFragment : Fragment() {
             googleBtn.setOnClickListener {
                 findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToGoogleSignFragment())
             }
+            registerbtn.setOnClickListener {
+                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())
+            }
         }
 
     }

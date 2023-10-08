@@ -41,8 +41,18 @@ class CartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setup()
+
         binding.checkBtn.setOnClickListener {
-            check()
+            with(binding){
+                if(cupon.visibility==View.VISIBLE
+                    &&detail.visibility==View.VISIBLE){
+                    cupon.visibility=View.GONE
+                    detail.visibility=View.GONE
+                }else{
+                    cupon.visibility=View.VISIBLE
+                    detail.visibility=View.VISIBLE
+                }
+            }
         }
     }
     private fun check(){

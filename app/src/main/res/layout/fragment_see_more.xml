@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:icon="@drawable/left"
+        app:rippleColor="@color/white"
         app:iconTint="@color/grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
